@@ -141,40 +141,40 @@ nav ul a svg{
     display: none;
 }
 
-.aboutme{
+.hist{
     display: flex;
     padding:100px;
 }
 
-.aboutme .container{
+.hist .container{
     width: 50%;
     padding-right: 50px;
 }
 
-.aboutme .container p{
+.hist .container p{
     text-align: justify;
     line-height: 30px;
     margin-top: 10px;
 }
 
-.aboutme .container ul li {
+.hist .container ul li {
     line-height: 30px;
     color: black;
 }
 
-.aboutme .img-container{
+.hist .img-container{
     width: 50%;
     text-align: center;
     position: relative;
 }
 
-.aboutme .img-container img{
+.hist .img-container img{
     width: 75%;  
     height: 100%;  
     object-fit: cover;
 }
 
-.aboutme .img-container .line{
+.hist .img-container .line{
     width: calc(70% + 50px);
     height: calc(100% + 50px);
     border: 1px solid var(--dark-pink);
@@ -183,7 +183,7 @@ nav ul a svg{
     left: calc(50% - 35% - 25px);
 }
 
-.aboutme .img-container .line.pink{
+.hist .img-container .line.pink{
     transform: rotate(-3.3deg);
     color: var(--pink);
 }
