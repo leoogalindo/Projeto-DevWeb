@@ -316,6 +316,43 @@ nav ul a svg{
     margin-left: 10px;
 }
 
+.portfolio .portfolio-card form{
+    color: black;
+}
+
+.portfolio .portfolio-card form .genero{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio .portfolio-card form .genero p{
+    margin-right: 10px;
+}
+
+.portfolio .portfolio-card form .salario-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.portfolio .portfolio-card form .salario-cont .salario{
+    width: 32%;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.portfolio .portfolio-card form button{
+    padding: 4px 15px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
 p{
     margin: 0;
 }
