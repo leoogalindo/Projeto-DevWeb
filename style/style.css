@@ -188,13 +188,13 @@ nav ul a svg{
     color: var(--pink);
 }
 
-.services{
+.livros{
     text-align: center;
     margin: 150px 0;
     padding: 0 100px;
 }
 
-.services-container, .portfolio-container{
+.livros-container, .estat-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -202,7 +202,7 @@ nav ul a svg{
     margin: 60px auto 0;
 }
 
-.services .services-container .service-card{
+.livros .livros-container .livros-card{
     max-width: 360px;
     background: var(--dark-pink);
     border: 1px solid var(--dark-pink);
@@ -216,17 +216,17 @@ nav ul a svg{
     text-align: center;
 }
 
-.services .services-container .service-card h2 {
+.livros .livros-container .livros-card h2 {
     color: white;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.services .services-container .service-card p {
+.livros .livros-container .livros-card p {
     color: white;
     text-align: justify;
 }
-.services .services-container .service-card .icon-container{
+.livros .livros-container .livros-card .icon-container{
     height: 70px;
     width: 70px;
     background: var(--background);
@@ -236,18 +236,18 @@ nav ul a svg{
     margin-bottom: 40px;
 }
 
-.services .services-container .service-card .icon-container svg{
+.livros .livros-container .livros-card .icon-container svg{
     color: var(--dark-pink);
     position: absolute;
     left: calc(50% - 12px);
     top: calc(50% - 12px);
 }
 
-.service-card + .service-card{
+.livros-card + .livros-card{
     margin-left: 10px;
 }
 
-.portfolio{
+.estat{
     padding: 0 100px;
     text-align: center;
     background: url(../assets/bg-portf.png);
@@ -255,11 +255,11 @@ nav ul a svg{
     height: 800px;
 }
 
-.portfolio .portfolio-container{
-    margin-top: 180px;
+.estat .estat-container{
+    margin-top: 150px;
 }
 
-.portfolio .portfolio-container .portfolio-card{
+.estat .estat-container .estat-card{
     background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(42px);
@@ -270,17 +270,17 @@ nav ul a svg{
     padding:50px 25px;
 }
 
-.portfolio .portfolio-container .portfolio-card .img-container{
+.estat .estat-container .estat-card .img-container{
     margin: 0 25px 50px;
     position: relative;
 }
 
-.portfolio .portfolio-container .portfolio-card .img-container img{
+.estat .estat-container .estat-card .img-container img{
     width: 100%;
     height: 200px;
 }
 
-.portfolio-container .portfolio-card .img-container .line{
+.estat-container .estat-card .img-container .line{
     width: calc(100% + 24px);
     height: calc(100% + 24px);
     border: 1px solid var(--dark-pink);
@@ -291,53 +291,32 @@ nav ul a svg{
     border-radius: 16px;
 }
 
-.portfolio .portfolio-container .portfolio-card .language-container{
-    margin-bottom: 20px;
-}
-
-.portfolio .portfolio-container .portfolio-card .language-container ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.portfolio .portfolio-container .portfolio-card .language-container ul li{
-    color: var(--dark-pink);
-    border: 1px solid var(--pink);
-    border-radius: 16px;
-    padding: 3px 15px;
-}
-
-.portfolio-card .language-container ul li + li{
+.estat .estat-card{
     margin-left: 10px;
 }
 
-.portfolio .portfolio-card{
-    margin-left: 10px;
-}
-
-.portfolio .portfolio-card form{
+.estat .estat-card form{
     color: black;
 }
 
-.portfolio .portfolio-card form .genero{
+.estat .estat-card form .genero{
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.portfolio .portfolio-card form .genero p{
+.estat .estat-card form .genero p{
     margin-right: 10px;
 }
 
-.portfolio .portfolio-card form .salario-cont{
+.estat .estat-card form .salario-cont{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.portfolio .portfolio-card form .salario-cont .salario{
-    width: 32%;
+.estat .estat-card form .salario-cont .salario{
+    width: 35%;
     border-radius: 5px;
     border: none;
     height: 20px;
@@ -347,29 +326,39 @@ nav ul a svg{
     text-align: center;
 }
 
-.portfolio .portfolio-card form button{
+.estat .estat-card form button{
     padding: 4px 15px;
     font-size: 15px;
     margin-top: 10px;
+}
+
+.respCalc{
+   text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+span{
+    color: var(--pink);
 }
 
 p{
     margin: 0;
 }
 
-.curriculum{
+.combate{
     padding: 0 100px;
     text-align: center;
 }
 
-.curriculum .container{
+.combate .container{
     display: flex;
     margin: 50px 0;
     max-width: 1200px;
     margin: 50px auto;
 }
 
-.curriculum .container .content{
+.combate .container .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -378,7 +367,7 @@ p{
     width: 100%;
 }
 
-.curriculum .container .content .curriculum-info{
+.combate .container .content .curriculum-info{
     display: grid;
     grid-template-columns: 150px auto;
     grid-gap: 1rem;
