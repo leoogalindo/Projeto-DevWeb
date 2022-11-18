@@ -99,7 +99,7 @@ header .container img{
 }
 
 header .container button{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 header img{
@@ -390,14 +390,7 @@ p{
 }
 
 .contact button{
-    margin: 40px auto;
-}
-
-.contact .social-media{
-    display: flex;
-    justify-content: space-around;
-    max-width: 360px;
-    margin: 30px auto 0;
+    margin: 0px auto 15px;
 }
 
 footer{
