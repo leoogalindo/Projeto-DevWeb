@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300;200&display=swap');
 
 body, button, input, select, textarea{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cafe','Poppins', sans-serif;
     color: white;
+}
+
+@font-face {
+    font-family: 'avigea';
+    src: url('Avigea.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cafe';
+    src: url('Louis George Cafe.ttf') format('truetype'), url('Louis George Cafe Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root{
@@ -69,6 +82,7 @@ button{
 }
 
 .title-pink{
+    font-family: "avigea";
     color:var(--dark-pink);
     font-weight: bold;
 }
@@ -294,9 +308,23 @@ nav ul a svg{
 .estat .estat-card{
     margin-left: 10px;
 }
+.estat-card .title{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    
+}
+
+.estat-card .text{
+    text-align: justify;
+}
+
 
 .estat .estat-card form{
     color: black;
+    display:table-row;
+    flex-direction: center;
+
 }
 
 .estat .estat-card form .genero{
@@ -327,9 +355,12 @@ nav ul a svg{
 }
 
 .estat .estat-card form button{
+    margin:auto;
     padding: 4px 15px;
     font-size: 15px;
     margin-top: 10px;
+    display: block;
+
 }
 
 .respCalc{
