@@ -382,6 +382,10 @@ p{
     text-align: center;
 }
 
+.combate .content .combate-img{
+    width: 60px;
+}
+
 .combate .container{
     display: flex;
     margin: 50px 0;
@@ -394,15 +398,25 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    width: 100%;
+    text-align: justify;
+    width: 55%;
+    padding: 15px 30px;
+}
+.combate .container .combate-img{
+    width: 50%;
+}
+
+.combate .container .content .list{
+    display: block;
+    padding-top: 15px;
+    width: 540px;
 }
 
 .combate .container .content .curriculum-info{
     display: grid;
     grid-template-columns: 150px auto;
     grid-gap: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contact{
