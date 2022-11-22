@@ -236,14 +236,18 @@ nav ul a svg{
     color: white;
     text-align: justify;
 }
-.livros .livros-container .livros-card .icon-container{
+.livros .livros-container .livros-card .icon-container {
     height: 70px;
     width: 70px;
-    background: var(--background);
+    background: #021824;
     display: inline-block;
     border-radius: 50%;
     position: relative;
     margin-bottom: 40px;
+}
+
+.livros .livros-container .livros-card .icon-container a {
+    color: inherit;
 }
 
 .livros .livros-container .livros-card .icon-container svg{
