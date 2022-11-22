@@ -1,14 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300;200&display=swap');
-
 body, button, input, select, textarea{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cafe','Poppins', sans-serif;
     color: white;
+}
+
+@font-face {
+    font-family: 'avigea';
+    src: url('Avigea.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cafe';
+    src: url('Louis George Cafe.ttf') format('truetype'), url('Louis George Cafe Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root{
     --dark-pink: #FF5678;
-    --background: #000a0e;
-    --medium-black: #031218;
     --pink: #F50756;
     
     --menu-height: 75px;
@@ -69,6 +79,7 @@ button{
 }
 
 .title-pink{
+    font-family: "avigea";
     color:var(--dark-pink);
     font-weight: bold;
 }
@@ -250,7 +261,7 @@ nav ul a svg{
 .estat{
     padding: 0 100px;
     text-align: center;
-    background: url(../assets/bg-portf.png);
+    background: url(../assets/degrade.png);
     margin-bottom: 100px;
     height: 800px;
 }
@@ -294,9 +305,22 @@ nav ul a svg{
 .estat .estat-card{
     margin-left: 10px;
 }
+.estat-card .title{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.estat-card .text{
+    text-align: justify;
+}
+
 
 .estat .estat-card form{
     color: black;
+    display:table-row;
+    flex-direction: center;
+
 }
 
 .estat .estat-card form .genero{
@@ -327,9 +351,12 @@ nav ul a svg{
 }
 
 .estat .estat-card form button{
+    margin:auto;
     padding: 4px 15px;
     font-size: 15px;
     margin-top: 10px;
+    display: block;
+
 }
 
 .respCalc{
@@ -351,6 +378,10 @@ p{
     text-align: center;
 }
 
+.combate .content .combate-img{
+    width: 60px;
+}
+
 .combate .container{
     display: flex;
     margin: 50px 0;
@@ -363,15 +394,25 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    width: 100%;
+    text-align: justify;
+    width: 55%;
+    padding: 15px 30px;
+}
+.combate .container .combate-img{
+    width: 50%;
+}
+
+.combate .container .content .list{
+    display: block;
+    padding-top: 15px;
+    width: 540px;
 }
 
 .combate .container .content .curriculum-info{
     display: grid;
     grid-template-columns: 150px auto;
     grid-gap: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contact{
@@ -396,175 +437,4 @@ p{
 footer{
     text-align: center;
     margin-bottom: 40px;
-}
-
-@media screen and (max-width: 1000px){
-    nav{
-        padding: 0 30px;
-    }
-    nav ul a{
-        font-size: 18px;
-    }
-
-    .aboutme{
-        flex-direction: column;
-    }
-
-    .aboutme .container, .aboutme .img-container{
-        width: 100%;
-    }
-
-    .aboutme .container{
-        padding-right: 0;
-    }
-
-    .aboutme .img-container{
-        margin: 70px 0;
-    }
-
-    .services, .portfolio{
-        padding: 0;
-    }
-
-    .services .services-container, .portfolio .portfolio-container{
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-card{
-        height: 390px;
-    }
-
-    .service-card + .service-card, .portfolio-card + .portfolio-card{
-        margin-left: 0;
-        margin-top: 30px;
-    }
-
-    .portfolio{
-       height: 100%;
-    }
-    
-    .curriculum .container{
-        flex-wrap: wrap;
-    }
-
-    .curriculum .container .curriculum-img{
-        display: block;
-        margin: 0 auto 50px;
-        width: 100%;
-        max-width: 520px;
-    }
-
-}
-
-
-@media screen and (max-width: 767px){
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    header .container{
-        width:100%;
-    }
-
-    header .container img{
-        display: inline;
-        height: 40px;
-        width: 125px;
-        margin-bottom: 30px;
-    }
-
-    nav{
-        padding: 30px;
-    }
-
-    nav img{
-        display: none;
-    }
-
-    nav ul{
-        padding: 0;
-    }
-
-    nav ul a{
-        font-size: 16px;
-    }
-}
-
-/* celular */
-@media screen and (max-width: 480px){
-    body{
-        margin-bottom: calc(var(--menu-height) + 50px);
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    header .container{
-        padding: 0 30px;
-        margin-bottom: 40px;
-    }
-
-    nav{
-        padding: 0 15px;
-        position: fixed;
-        bottom: 0;
-        top: unset;
-        width: 100%;
-    }
-
-    nav ul a{
-        font-size: 13px;
-        margin: 0 7px;   
-    }
-
-    nav ul a svg{
-        display: block;
-        margin: 0 auto 10px;
-    }
-
-    .aboutme{
-        padding: 40px
-    }
-    
-    .services{
-        margin: 70px 0;
-    }
-
-    .services .services-container, .portfolio-container{
-        padding: 0 20px;
-    }
-
-    .portfolio{
-        margin: 100px 0 50px;
-    }
-
-    .portfolio .portfolio-container{
-        margin-top: 70px;
-    }
-    
-    .portfolio .portfolio-card{
-        margin-left: 0;
-    }
-
-    .curriculum{
-        padding: 0 20px;
-    }
-
-    .curriculum .container .content{
-        font-size: 14px;
-    }
-
-    .curriculum .container .content .curriculum-info{
-        padding: 0px;
-    }
-
-    .secundary-button{
-        font-size: 16px;
-    }
 }
