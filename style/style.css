@@ -9,7 +9,6 @@ body, button, input, select, textarea{
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'cafe';
     src: url('Louis George Cafe.ttf') format('truetype'), url('Louis George Cafe Bold.ttf') format('truetype');
