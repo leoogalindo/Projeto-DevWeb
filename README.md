@@ -10,4 +10,10 @@ Após tomarmos ciência do plano global da :earth_americas: ONU :earth_americas:
 - Deve-se selecionar seu genêro e informar seu salário
 - A partir disso, é realizado os cálculos para gerar seu salário caso você fosse o genêro oposto
 - Abaixo há um exemplo de seu funcionamento
+
 ![Captura de tela 2022-11-30 105408](https://user-images.githubusercontent.com/89134725/204814306-a3e8b257-b9d6-4292-bc8b-c2fbd48612af.png)
+
+## :computer: Tecnologias utilizadas
+- `HTML`
+- `CSS`
+- `JavaScript`
